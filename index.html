@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños, Mi Amada Gizlan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            background: linear-gradient(to bottom right, #f5e6f0, #d6ecf3);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 30px auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 2;
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 8vw;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #d45d79;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        p {
+            font-size: 4vw;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .signature {
+            text-align: right;
+            font-style: italic;
+            margin-top: 30px;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0); }
+        }
+
+        .petals-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .petal {
+            position: absolute;
+            width: 15vw; /* Tamaño más pequeño para móviles */
+            height: 15vw;
+            background-image: url('https://images.vexels.com/content/301925/preview/cute-birthday-sloth-cartoon-8becf9.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            opacity: 0.9;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        /* Posiciones ajustadas para que se vean mejor en móviles */
+        .petal1 { top: 5%; left: 5%; animation-duration: 8s; }
+        .petal2 { top: 10%; left: 20%; animation-duration: 7s; }
+        .petal3 { top: 15%; left: 35%; animation-duration: 6s; }
+        .petal4 { top: 20%; left: 50%; animation-duration: 8s; }
+        .petal5 { top: 25%; left: 65%; animation-duration: 7s; }
+        .petal6 { top: 30%; left: 80%; animation-duration: 9s; }
+        .petal7 { top: 35%; left: 10%; animation-duration: 8s; }
+        .petal8 { top: 40%; left: 15%; animation-duration: 7s; }
+        .petal9 { top: 45%; left: 25%; animation-duration: 6s; }
+        .petal10 { top: 50%; left: 30%; animation-duration: 8s; }
+        .petal11 { top: 55%; left: 40%; animation-duration: 7s; }
+        .petal12 { top: 60%; left: 45%; animation-duration: 9s; }
+        .petal13 { top: 65%; left: 55%; animation-duration: 8s; }
+        .petal14 { top: 70%; left: 60%; animation-duration: 7s; }
+        .petal15 { top: 75%; left: 70%; animation-duration: 6s; }
+        .petal16 { top: 80%; left: 75%; animation-duration: 8s; }
+        .petal17 { top: 85%; left: 80%; animation-duration: 7s; }
+        .petal18 { top: 90%; left: 85%; animation-duration: 9s; }
+        .petal19 { top: 5%; left: 15%; animation-duration: 6s; }
+        .petal20 { top: 10%; left: 25%; animation-duration: 7s; }
+        .petal21 { top: 15%; left: 40%; animation-duration: 8s; }
+        .petal22 { top: 20%; left: 55%; animation-duration: 6s; }
+        .petal23 { top: 25%; left: 70%; animation-duration: 7s; }
+        .petal24 { top: 30%; left: 80%; animation-duration: 8s; }
+        .petal25 { top: 35%; left: 25%; animation-duration: 6s; }
+        .petal26 { top: 40%; left: 35%; animation-duration: 7s; }
+        .petal27 { top: 45%; left: 50%; animation-duration: 8s; }
+        .petal28 { top: 50%; left: 60%; animation-duration: 6s; }
+        .petal29 { top: 55%; left: 70%; animation-duration: 7s; }
+        .petal30 { top: 60%; left: 80%; animation-duration: 8s; }
+        .petal31 { top: 65%; left: 5%; animation-duration: 9s; }
+        .petal32 { top: 70%; left: 10%; animation-duration: 8s; }
+        .petal33 { top: 75%; left: 20%; animation-duration: 6s; }
+        .petal34 { top: 80%; left: 30%; animation-duration: 7s; }
+        .petal35 { top: 85%; left: 40%; animation-duration: 8s; }
+        .petal36 { top: 90%; left: 45%; animation-duration: 9s; }
+        .petal37 { top: 5%; left: 30%; animation-duration: 6s; }
+        .petal38 { top: 10%; left: 40%; animation-duration: 7s; }
+        .petal39 { top: 15%; left: 50%; animation-duration: 8s; }
+        .petal40 { top: 20%; left: 60%; animation-duration: 6s; }
+        .petal41 { top: 25%; left: 70%; animation-duration: 9s; }
+        .petal42 { top: 30%; left: 80%; animation-duration: 8s; }
+        .petal43 { top: 35%; left: 5%; animation-duration: 7s; }
+        .petal44 { top: 40%; left: 10%; animation-duration: 8s; }
+        .petal45 { top: 45%; left: 15%; animation-duration: 6s; }
+        .petal46 { top: 50%; left: 20%; animation-duration: 7s; }
+        .petal47 { top: 55%; left: 30%; animation-duration: 8s; }
+        .petal48 { top: 60%; left: 40%; animation-duration: 6s; }
+        .petal49 { top: 65%; left: 50%; animation-duration: 7s; }
+        .petal50 { top: 70%; left: 60%; animation-duration: 8s; }
+        .petal51 { top: 75%; left: 70%; animation-duration: 9s; }
+        .petal52 { top: 80%; left: 80%; animation-duration: 7s; }
+        .petal53 { top: 85%; left: 10%; animation-duration: 6s; }
+        .petal54 { top: 90%; left: 20%; animation-duration: 8s; }
+        .petal55 { top: 5%; left: 10%; animation-duration: 9s; }
+        .petal56 { top: 10%; left: 20%; animation-duration: 6s; }
+        .petal57 { top: 15%; left: 30%; animation-duration: 8s; }
+        .petal58 { top: 20%; left: 40%; animation-duration: 7s; }
+        .petal59 { top: 25%; left: 50%; animation-duration: 9s; }
+        .petal60 { top: 30%; left: 60%; animation-duration: 6s; }
+        .petal61 { top: 35%; left: 70%; animation-duration: 7s; }
+        .petal62 { top: 40%; left: 80%; animation-duration: 8s; }
+        .petal63 { top: 45%; left: 5%; animation-duration: 6s; }
+        .petal64 { top: 50%; left: 15%; animation-duration: 7s; }
+        .petal65 { top: 55%; left: 25%; animation-duration: 9s; }
+        .petal66 { top: 60%; left: 35%; animation-duration: 8s; }
+        .petal67 { top: 65%; left: 45%; animation-duration: 6s; }
+        .petal68 { top: 70%; left: 55%; animation-duration: 7s; }
+        .petal69 { top: 75%; left: 65%; animation-duration: 8s; }
+        .petal70 { top: 80%; left: 75%; animation-duration: 6s; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Feliz Cumpleaños, Mi Amada Gizlan</h1>
+        <p>Hoy, en este día tan especial, no podía permitir que pasara un solo segundo sin ser el primero en decirte, desde lo más profundo de mi corazón, ¡feliz cumpleaños! Desde que los primeros destellos de este día comenzaron a asomar en el cielo, mi único deseo ha sido ser la primera voz que te susurre al oído lo importante que eres y lo mucho que significas para mí...</p>
+        <p>El universo hoy está de fiesta porque un día como hoy, hace 24 añitos, llegaste tú, trayendo contigo la esencia de lo hermoso y lo extraordinario. Desde que entraste en mi vida, todo cobró sentido...</p>
+        <p>Hoy celebro no solo el momento en que naciste, sino cada segundo que has compartido conmigo desde entonces...</p>
+        <p>Gizlan, tú eres la risa que rompe el silencio, la calma que llena mi caos y la chispa que enciende mis días...</p>
+        <p>Tu amor me ha dado la valentía para soñar, la fuerza para crecer y la alegría para vivir cada momento al máximo...</p>
+        <p>Feliz cumpleaños, mi vida. Gracias por existir, por ser tú y por hacerme el hombre más afortunado...</p>
+        <div class="signature">
+            <p>Con todo mi amor,</p>
+            <p>Abdel</p>
+        </div>
+    </div>
+
+    <div class="petals-container">
+        <!-- Los 70 pétalos -->
+        <div class="petal petal1"></div>
+        <div class="petal petal2"></div>
+        <div class="petal petal3"></div>
+        <div class="petal petal4"></div>
+        <div class="petal petal5"></div>
+        <div class="petal petal6"></div>
+        <div class="petal petal7"></div>
+        <div class="petal petal8"></div>
+        <div class="petal petal9"></div>
+        <div class="petal petal10"></div>
+        <div class="petal petal11"></div>
+        <div class="petal petal12"></div>
+        <div class="petal petal13"></div>
+        <div class="petal petal14"></div>
+        <div class="petal petal15"></div>
+        <div class="petal petal16"></div>
+        <div class="petal petal17"></div>
+        <div class="petal petal18"></div>
+        <div class="petal petal19"></div>
+        <div class="petal petal20"></div>
+        <div class="petal petal21"></div>
+        <div class="petal petal22"></div>
+        <div class="petal petal23"></div>
+        <div class="petal petal24"></div>
+        <div class="petal petal25"></div>
+        <div class="petal petal26"></div>
+        <div class="petal petal27"></div>
+        <div class="petal petal28"></div>
+        <div class="petal petal29"></div>
+        <div class="petal petal30"></div>
+        <div class="petal petal31"></div>
+        <div class="petal petal32"></div>
+        <div class="petal petal33"></div>
+        <div class="petal petal34"></div>
+        <div class="petal petal35"></div>
+        <div class="petal petal36"></div>
+        <div class="petal petal37"></div>
+        <div class="petal petal38"></div>
+        <div class="petal petal39"></div>
+        <div class="petal petal40"></div>
+        <div class="petal petal41"></div>
+        <div class="petal petal42"></div>
+        <div class="petal petal43"></div>
+        <div class="petal petal44"></div>
+        <div class="petal petal45"></div>
+        <div class="petal petal46"></div>
+        <div class="petal petal47"></div>
+        <div class="petal petal48"></div>
+        <div class="petal petal49"></div>
+        <div class="petal petal50"></div>
+        <div class="petal petal51"></div>
+        <div class="petal petal52"></div>
+        <div class="petal petal53"></div>
+        <div class="petal petal54"></div>
+        <div class="petal petal55"></div>
+        <div class="petal petal56"></div>
+        <div class="petal petal57"></div>
+        <div class="petal petal58"></div>
+        <div class="petal petal59"></div>
+        <div class="petal petal60"></div>
+        <div class="petal petal61"></div>
+        <div class="petal petal62"></div>
+        <div class="petal petal63"></div>
+        <div class="petal petal64"></div>
+        <div class="petal petal65"></div>
+        <div class="petal petal66"></div>
+        <div class="petal petal67"></div>
+        <div class="petal petal68"></div>
+        <div class="petal petal69"></div>
+        <div class="petal petal70"></div>
+    </div>
+
+</body>
+</html>
